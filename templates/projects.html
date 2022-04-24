@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+    <head>
+        <link rel="stylesheet" href={{ url_for("static",filename='styles/projects.css') }}>
+    </head>
+
+    <h1 class="project-header">My Projects</h1>
+    
+    <div class="project-cards">
+        <div class="project-card">
+            <h1 class="project-title">Echidna.py</h1>
+            <p class="project-desc">A Discord bot written in Python. The application serves as a general purpose utility for many servers, including commands designed for math, image processing, anime and text-based mini-games.</p>
+            <h1 class="learned-title">What I learned:</h1>
+            <ul class="learned-list">
+                <li class="learned-item">Asynchronous programming (coroutines, async/await)</li>
+                <li class="learned-item">Making API requests (GET/POST)</li>
+                <li class="learned-item">Wrapper API libraries around mainstream web applications</li>
+                <li class="learned-item">Writing modular code and effectively organizing packages</li>
+                <li class="learned-item">Reading and writing JSON data and its use in RESTful applications</li>
+            </ul>
+        </div>
+        <div class="project-card">
+            <h1 class="project-title">UniMeetups</h1>
+            <p class="project-desc">A web application designed for CalgaryHacks 2022. This website aimed to connect university students across Canada, with a more anonymized approach to the user experience. Users can register their account with their intended school, and they will be matched with other users in the school hub that have similar interests. If a user finds a potential match interesting, they can send a meetup request to the end user, who may accept or decline their adavances. There is also a section dedicated to public meetup events, where any user enrolled in a school's meetup board can create their own events. </p>
+            <h1 class="learned-title">What I learned:</h1>
+            <ul class="learned-list">
+                <li class="learned-item">Working in a collaborative software setting and using VCS effectively.</li>
+                <li class="learned-item">Website routing</li>
+                <li class="learned-item">Front and back end communication</li>
+                <li class="learned-item">Using server side databases and application caching</li>
+                <li class="learned-item">User authentication protocols</li>
+            </ul>
+        </div> 
+
+        <div class="project-card">
+            <h1 class="project-title">Tunes.Java</h1>
+            <p class="project-desc">A desktop music player, designed using the Swing GUI framework written in Java. It was created as my final project, within my object oriented programming course. Users can open their own mp3 files and create/save/edit their own playlists.</p>
+            <h1 class="learned-title">What I learned:</h1>
+            <ul class="learned-list">
+                <li class="learned-item">Making responsive layouts on a desktop application</li>
+                <li class="learned-item">Applying OOP and design practices in software development</li>
+                <li class="learned-item">Serializing the state of an application on a user's system locally</li>
+    
+            </ul>
+        </div> 
+
+        <div class="project-card">
+            <h1 class="project-title">Personal Website</h1>
+            <p class="project-desc">The website you are currently on. You can learn more about me here. Thanks for visiting!</p>
+        </div>
+    </div>
+
+ 
+    
+{% endblock %}

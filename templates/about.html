@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href={{ url_for('static',filename="styles/about.css") }}>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    
+    <h1 class="about-title"> About Me </h1>
+    <div class="about-container">
+        <img class="about-img" src="{{ url_for('static',filename="images/tanish.jpg")}}">
+        
+        <div class="info-container">
+            <h1 class="name-heading">Tanish Shah</h1>
+            <p class="about-desc">
+                I am a second year Data Science student, currently studying at Simon Fraser University. I am really passionate about expanding my knowledge about machine learning via data visualization and learning model libraries with Python. I also harbor interests within the software development that is involved in front and back end web development. 
+            </p>
+        </div>
+        <code class="prettyprint me-json">{
+            "name":"Tanish Shah", <br>
+            "school":"Simon Fraser University",<br>
+            "major":"Data Science",<br>
+            "age":19,<br>
+            "status":"Seeking 2022 internship and upcoming Spring 2023 co-op student",<br>
+            "hobbies":["anime","coding","music","gaming"],<br>  
+            "learning":["pandas","scikitlearn","express.js","firebase"]
+          }</code>
+        
+    </div>
+
+    <h1 class="about-title"> <span style="color:red;">♥♥</span> Thanks for visiting! <span style="color:red;">♥♥</span> </h1>
+    <img class="cat-img" src={{cat_src}}>
+{% endblock %}

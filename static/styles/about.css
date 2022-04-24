@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&family=VT323&display=swap');
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    margin-top : 50px;
+    flex-wrap : wrap;
+}
+
+.info-container {
+    width : 400px;  
+}
+
+.about-title {
+    font-family: 'VT323', monospace;
+    color : white;
+    font-size : 55px;
+    text-align: center;
+    margin-top : 25px;
+}
+
+.about-img {
+    border-radius : 50%;
+    max-width : 20%;
+    max-height : 20%;
+}
+
+.name-heading {
+    font-family: 'Roboto Mono', monospace;
+    color : white;
+    margin-top : 10px;
+    margin-left : 45px;
+    text-align : center;
+}
+
+.cat-img {
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 5px;
+    width : 250;
+    height : 250px;
+    border-radius : 15px;
+}
+
+.about-desc {
+    font-family: 'Roboto Mono', monospace;
+    color : white;
+    text-align : center;
+    margin-left : 30px;
+    margin-top : 10px;
+}
+
+.me-json {
+    font-family: 'Roboto Mono', monospace;
+    font-size : 13px;
+    margin-left : 30px;
+    margin-top : 50px;
+    padding : 15px;
+    background-color : white;
+    width : 450px;
+    height : 200px;
+    border-radius : 10px;
+    text-align: center;
+}
+
+.com       { color: #008000; }
+.str, .tag { color : #ff79c6 }
+.kwd, .atv { color: #0000FF; }
+.typ       { color: #2B91AF; }
+.lit, .atn { color: #FF0000; }
+.pun, .pln { color: #000000; }
+.dec       { color: #800080; }

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <head>
+
+        <link rel="stylesheet" href={{ url_for('static',filename='styles/home.css') }}>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>
+    <div class="home-container">
+        <h1 class="welcome-heading animate__animated animate__flipInX">Welcome to my domain!</h1>
+        <h1 class="name-title animate__animated animate__flipInX">Tanish Shah</h1>
+        <div class="home-showcase">
+            <div class="tech-stack-card animate__animated animate__flipInX">
+                <h1 class="card-heading">Languages</h1>
+                <div class="card-row">
+                    <img class="card-img" src={{ url_for('static',filename='images/python_logo.png')}}>
+                    <img class="card-img" src={{ url_for('static',filename='images/java_logo.png')}}>
+                    <img class="card-img" src={{ url_for('static',filename='images/c_logo.png')}}>
+                    <img class="card-img" src={{ url_for('static',filename='images/cpp_logo.png')}}>
+                    <img class="card-img" src={{ url_for('static',filename='images/js_logo.png')}}>
+                </div>
+                <h1 class="card-heading">Frameworks/Technologies</h1>
+                <div class="card-row">
+                    <img class="card-img" src={{ url_for('static',filename='images/mongo_logo.png')}}>
+                    <img class="card-img" src={{ url_for('static',filename='images/git_logo.png')}}>
+                    <img class="card-img" src={{ url_for('static',filename='images/flask_logo.png')}}>
+                    <img class="card-img" src={{ url_for('static',filename='images/react_logo.png')}}>
+                </div>
+            </div>
+       </div>
+    </div>
+ 
+    
+{% endblock %}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&family=VT323&display=swap');
+
+
+.project-header {
+    margin-top : 35px;
+    text-align : center;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size : 55px;
+}
+
+.project-cards {
+    display : grid;
+    place-items : center;
+    text-align : center;
+    margin-top : 10px;
+}
+
+.project-desc {
+    margin : 20px;
+}
+
+.learned-title {
+    color : white;
+    font-size : 25px;
+}
+
+.learned-list {
+    font-size : 12px;
+    font-style : italic;
+    margin-top : 5px;
+    list-style: none;
+    color : lightgreen;
+}
+
+.learned-item {
+    padding : 5px;
+}
+
+.project-card {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    margin : 25px;
+    background-color : #503047;
+    border-radius : 10px;
+    transition : all 200ms ease-in-out;
+    width: 550px;
+    
+}
+
+.project-card:hover {
+    transform : scale(1.05);
+}
+

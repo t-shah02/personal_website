@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        {% block head %}
+        <link rel="stylesheet" href={{ url_for('static',filename='styles/base.css') }}>
+        <title>{% block title %}{% endblock %}</title>
+        {% endblock %}
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1 class="nav-title"><a class="nav-link" href="/">Tanish Shah</a></h1>
+            <ul class="navbar-items">
+                <li class="navbar-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/projects">Projects</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" target="_blank" href="/resume">Resume</a>
+                </li>
+            </ul>
+            <div class="contacts-row">
+                <a target="_blank" href="https://www.youtube.com/channel/UCXh3O5wgk-5wYjhSmvkh-Ig"><img class="contact-img" src={{ url_for("static",filename="images/yt_logo.png") }}></a>
+                <a target="_blank" href="https://github.com/t-shah02"><img class="contact-img" src={{ url_for("static",filename="images/github_logo.png") }}></a>
+                <a target="_blank" href="https://www.linkedin.com/in/tanish-shah-888121210/"><img class="contact-img" src={{ url_for("static",filename="images/linkedin_logo.jpg") }}></a>
+            </div>
+        </nav>
+        
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>
