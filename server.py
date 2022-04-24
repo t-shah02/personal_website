@@ -32,4 +32,4 @@ def resume():
     return send_from_directory(resume_location,"resume.pdf")
 
     
-app.run(host="localhost",port=8080,debug=True)
+app.run()
