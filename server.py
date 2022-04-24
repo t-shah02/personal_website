@@ -33,4 +33,4 @@ def resume():
     return send_from_directory(resume_location,"resume.pdf")
 
     
-app.run(port=os.getenv("PORT"))
+app.run(port=33507)
