@@ -33,4 +33,5 @@ def resume():
     return send_from_directory(resume_location,"resume.pdf")
 
     
-app.run(port=33507)
+if __name__ == '__main__':
+    app.run()
