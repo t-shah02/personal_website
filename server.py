@@ -1,6 +1,7 @@
 
 from flask import Flask,render_template,url_for,send_from_directory
 import requests
+import os
 
 app = Flask(__name__,template_folder="./templates")
 
@@ -32,4 +33,4 @@ def resume():
     return send_from_directory(resume_location,"resume.pdf")
 
     
-app.run()
+app.run(os.getenv("PORT"))
